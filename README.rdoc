@@ -1,0 +1,19 @@
+= Combined uniqueness validator
+
+== Installation
+Add the following line to your Gemfile
+
+  gem "combined_uniqueness_validator"
+
+== Using
+
+Validate combined uniqueness of any number of fields:
+	validates_with CombinedUniquenessValidator, :fields => [ :first_field, :second_field, :third_field ]
+
+== Maintainer
+
+* Andrea Schiavini (http://github.com/metalelf0)
+
+== Contributing to combined_uniqueness_validator
+ 
+* do what you want with it :) If you want to report issues, fork it, send pull requests... you're welcome ;)
