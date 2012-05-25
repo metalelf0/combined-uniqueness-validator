@@ -1,19 +1,18 @@
 # encoding: utf-8
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
+class Person
+  def initialize args
+    args.each_pair {|key, value| self.send("#{key}=", value)}
+  end
+
+  include ActiveModel::Validations
+  attr_accessor :name, :surname
+  validate_combined_uniqueness_of :name, :surname
+end
+
 describe CombinedUniquenessValidator do
 
-  before do
-    class Person
-      def initialize args
-        args.each_pair {|key, value| self.send("#{key}=", value)}
-      end
-
-      include ActiveModel::Validations
-      attr_accessor :name, :surname
-      validates_with CombinedUniquenessValidator, :fields => [:name, :surname ]
-    end
-  end
 
   describe "validate both fields, happy path" do
     before do
