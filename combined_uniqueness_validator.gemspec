@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "combined_uniqueness_validator"
-  s.version     = "0.1.0"
+  s.version     = "0.1.1"
   s.authors     = ["Andrea Schiavini"]
   s.email       = ["metalelf0@gmail.com"]
   s.homepage    = ""
