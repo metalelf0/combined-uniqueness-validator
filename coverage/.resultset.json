@@ -1,0 +1,28 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/aschiavini/Documents/codice_elf0/combined_uniqueness_validator/lib/combined_uniqueness_validator.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        3,
+        3,
+        null,
+        null,
+        1,
+        3,
+        3,
+        6,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1337938929
+  }
+}
