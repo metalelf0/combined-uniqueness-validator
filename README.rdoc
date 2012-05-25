@@ -9,7 +9,9 @@ Add the following line to your Gemfile
 
 Validate combined uniqueness of any number of fields:
 
-	validates_with CombinedUniquenessValidator, :fields => [ :first_field, :second_field, :third_field ]
+	validate_combined_uniqueness_of :first_field, :second_field, :third_field
+
+It is like creating a primary key on these fields but logically (this means validations will be performed by `ActiveModel`, not by your database).
 
 == Maintainer
 

@@ -1,4 +1,5 @@
 require 'active_model'
+require File.join(File.dirname(__FILE__), 'active_model', 'validations', 'helper_methods')
 
 class CombinedUniquenessValidator < ActiveModel::Validator
 
